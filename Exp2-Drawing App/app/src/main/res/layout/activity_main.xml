@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button android:id="@+id/redBtn" android:text="Red"/>
+            <Button android:id="@+id/blueBtn" android:text="Blue"/>
+            <Button android:id="@+id/greenBtn" android:text="Green"/>
+            <Button android:id="@+id/blackBtn" android:text="Black"/>
+
+            <Button android:id="@+id/smallBtn" android:text="Small"/>
+            <Button android:id="@+id/mediumBtn" android:text="Medium"/>
+            <Button android:id="@+id/largeBtn" android:text="Large"/>
+
+            <Button android:id="@+id/eraserBtn" android:text="Eraser"/>
+            <Button android:id="@+id/clearBtn" android:text="Clear"/>
+            <Button android:id="@+id/saveBtn" android:text="Save"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Drawing Area -->
+    <com.example.drawingapp.DrawingView
+        android:id="@+id/drawingView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
